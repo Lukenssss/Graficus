@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Feather;
+    src: url(./assets/fonts/Feather.ttf);
+}
+
+@font-face {
+    font-family: Bai;
+    src: url(./assets/fonts/Bai.ttf);
+}
+
+:root {
+    --colors-back: #222222;
+    --colors-line-one: #2b2b2b;
+    --colors-line-two: #323232;
+    --colors-line-three: #393939;
+    --colors-line-four: #545454;
+    --colors-blue: #54a4f2;
+    --colors-red: #eb4a40;
+    --colors-polar: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Feather;
+    font-size: 20px;
+    stroke-width: 1.5px;
+}
+
+.container {
+    background-color: var(--colors-back);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.function-plot {
+    width: 100vw;
+    height: 100vh;
+}
+
+.function-plot .x.axis .tick line {
+    stroke-width: 1px;
+    background-color: var(--colors-line-three);
+}
+
+.function-plot .x.axis .tick text {
+    display: none;
+}
+
+.function-plot .x.axis path.domain {
+    stroke-width: 2px;
+    font-size: 15px;
+    display: none;
+}
+
+.function-plot .y.axis .tick line {
+    stroke-width: 1px;
+    background-color: var(--colors-line-three);
+}
+
+.function-plot .y.axis .tick text {
+    display: none;
+}
+
+.function-plot .y.axis path.domain {
+    stroke-width: 2px;
+    font-size: 15px;
+    display: none;
+}
